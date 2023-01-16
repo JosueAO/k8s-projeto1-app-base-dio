@@ -5,13 +5,13 @@ $("#button-blue").on("click", function() {
     var txt_comentario = $("#comment").val();
 
     $.ajax({
-        url: "",
+     //   url: "http://IP_COM_A_PORTA",
         
         type: "post",
         data: {nome: txt_nome, comentario: txt_comentario, email: txt_email},
         beforeSend: function() {
         
-            console.log("Tentando enviar os dados....");
+            console.log("Tentando enviar os dados...");
 
         }
     }).done(function(e) {
